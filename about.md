@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, my name is Baver. I'm 18 years old and I've been interested in software development since I was 16. Currently, I'm writing the backend part of websites using Node.js and MongoDB, and sometimes I also work on the frontend :)
 
-### More Information
+<!--### More Information
 
 A place to include any other types of information that you'd like to include about yourself.
+-->
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[bawertorun@gmail.com](mailto:bawertorun@gmail.com)
