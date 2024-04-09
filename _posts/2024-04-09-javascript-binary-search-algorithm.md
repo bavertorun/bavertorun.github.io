@@ -4,7 +4,7 @@ title: "JavaScript Binary Seacrh Algorithm"
 tags: [JavaScript,Algorithm]
 comments: true
 ---
-Linear Search Algorithm, bir dizide belirli bir verinin varlığını tespit etmek için kullanılan basit bir yöntemdir. Dizi içinde aranan veriyi, ilk öğeden başlayarak son öğeye kadar tek tek karşılaştırır. Eğer algoritma, aranan veriye eşit olan bir öğe bulursa, onun indisini döndürür. Eğer aranan veriyle eşleşen bir öğe bulunamazsa, -1 değerini döndürür; bu durumda aranan öğenin dizide bulunmadığı anlamına gelir. Algoritma, dizi içindeki terimleri sıralı olarak aranan öğe ile karşılaştırdığı için sıklıkla doğrusal arama algoritması veya sıralı arama algoritması olarak da adlandırılır.
+Binary search algorithm is a highly efficient method used to locate a target value within a sorted array or list. It operates by continually dividing the search interval in half until the target is found or the interval becomes empty. Beginning with the entire array, the algorithm compares the target value with the middle element. If they match, the index of the target is returned. If the target is less than the middle element, the right half of the array is discarded and the search continues on the left half. Conversely, if the target is greater, the left half is discarded and the search proceeds on the right half. This process is repeated until the target is located or the search interval becomes empty. With a time complexity of O(log n), binary search is notably efficient for large datasets, although it requires the array or list to be sorted beforehand.
 
 ```
 const shortedArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
