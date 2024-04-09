@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linear Seacrh Algorithm"
+title: "JavaScript Linear Seacrh Algorithm"
 tags: [JavaScript,Algorithm]
 comments: true
 ---
