@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://bavertorun.github.io/sitemap.xml
+Disallow: /404.html

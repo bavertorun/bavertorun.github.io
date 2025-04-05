@@ -2,14 +2,17 @@
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
   {% include meta.html %}
-  {% include fonts.html %}
+  {% include schema.html %}
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico">
+
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/icons.css" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  {% endif %}
 </head>

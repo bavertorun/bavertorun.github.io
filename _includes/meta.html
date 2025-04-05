@@ -1,18 +1,36 @@
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+{% if page.excerpt %}
+<meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}" />
+<meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}" />
+{% else %}
+<meta name="description" content="{{ site.description }}">
+<meta property="og:description" content="{{ site.description }}" />
+{% endif %}
 
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+<meta name="author" content="{{ site.name }}" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta name="twitter:title" content="{{ page.title }}" />
+{% endif %}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@{{ site.footer-links.twitter }}" />
+<meta name="twitter:site" content="@{{ site.footer-links.twitter }}" />
+
+{% if page.image %}
+<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}/images/default-og-image.jpg" />
+<meta name="twitter:image" content="{{ site.url }}/images/default-og-image.jpg" />
+{% endif %}

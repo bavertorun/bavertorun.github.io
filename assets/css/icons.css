@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'nav-icons';
+  src: url('../fonts/nav-icons.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.icon-next:after {
+  font-family: 'nav-icons';
+  content: "\2192"; /* Right arrow → */
+}
+
+.icon-prev:before { 
+  font-family: 'nav-icons';
+  content: "\2190"; /* Left arrow ← */
+}

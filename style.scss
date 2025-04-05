@@ -485,6 +485,39 @@ nav {
       }
     }
   }
+
+  .prev, .next {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+  }
+
+  .icon-prev, .icon-next {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  .nav-arrow {
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.3em;
+  }
+
+  .prev a, .next a {
+    display: flex;
+    align-items: center;
+  }
+
+  .prev .nav-arrow {
+    margin-right: 0.5em;
+  }
+
+  .next .nav-arrow {
+    margin-left: 0.5em;
+  }
 }
 
 // Archive
