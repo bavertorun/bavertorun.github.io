@@ -4,8 +4,8 @@ title: "A Complete Guide to Blockchain Technology: Understanding the Future of D
 description: "Learn everything about blockchain technology, from basic concepts to practical applications. Discover how this revolutionary technology is transforming industries."
 image: /images/posts/2025/blockchain-guide.webp
 author: Baver Torun
-date: 2025-05-04
-last_modified_at: 2025-05-04
+date: 2025-04-05
+last_modified_at: 2025-04-05
 categories: [Technology, Blockchain]
 tags: [blockchain, cryptocurrency, web3, decentralization, smart-contracts]
 ---
