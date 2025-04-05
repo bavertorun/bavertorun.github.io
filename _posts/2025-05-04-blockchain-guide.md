@@ -74,6 +74,7 @@ Example:
 if (payment_received) {
     releaseProduct();
 }
+```
 
 They remove intermediaries and allow for **trustless automation**.
 
